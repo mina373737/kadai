@@ -1,12 +1,12 @@
 body{
   background-color: #efefef;
-  font-size: 14px
+  font-size: 14px;
   color: #333;
   margin: 0;
 }
 h1,h2,h3,h4,h5{
-  margin:0 0 10px 0;
-  padding: 0;
+  margin: 0 0 10px 0;
+  pading: 0;
 }
 header{
   margin-top: 20px;
@@ -16,33 +16,32 @@ header{
   margin: 0 auto 40px auto;
 }
 .header-title-area{
-  margin-top:40px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 .logo{
+  /* テキストを中央寄せにする */
+  text-align:center;
   font-size: 32px;
-}
-.text-sub{
-  color: #777;
 }
 .header-navigation{
   width: 100%;
-  background-color:  #000;
+  background-color: #000;
   padding: 20px 0;
 }
-.header-navigation :after{
+.header-navigation:after{
   clear: both;
   display: block;
   content: " ";
 }
 .header-navigation li{
   float: left;
-  padding: 0 30px;
   text-align: center;
   list-style-type: none;
 }
 .header-navigation li a{
-  color: #333;
+  /* ヘッダーメニューの文字色を白にする */
+  color: #fff;
   text-decoration: none;
 }
 .text-title{
@@ -51,27 +50,46 @@ header{
   margin-top: 0;
   margin-bottom: 20px;
 }
+.left-contents{
+  width: 600px;
+  margin-right: 20px;
+  float: left;
+  background-color: #fff
+}
+.right-contents{
+  float: left;
+  width: 300px;
+}
 .card-contents{
+  float: left;
   padding: 40px;
   display: block;
   margin-bottom: 20px;
   background-color: #fff;
 }
-.left-contents{
-  width: 600px;
-  margin-right: 20px;
+.blog-cell{
+  width: 100%
   float: left;
 }
-.right-contents{
-  width: 300px;
+.contents-image{
   float: left;
+  width: 15px;
+  height: 150px;
+}
+.contents-date{
+  width: 350;
+  float-left;
+}
+.contents-title{
+  width: 350px;
+  float: left;
+  font-size: 20px;
+}
+.right-contents-text-title-list{
+  list-style-type: none;
+  padding-left: 0;
 }
 .copyright{
-  color: #777;
+  color:777;
   text-align: center;
-}
-.main:after{
-  clear: both;
-  display: block;
-  content: " ";
 }
