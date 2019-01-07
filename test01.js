@@ -1,23 +1,23 @@
 //課題1:promptで入力した値から「正の数」「負の数」を判定してalertする処理を書いてください。
 
 // alert('外部ファイル');
-var answer=promt('数字を入力してください');
-if(answer= +$i){
+var answer=prompt('数字を入力してください');
+if(answer=== +$i){
   alert('正の数');
 }else{
   alert('負の数');
 }
 
 //課題2:1.で数値以外が入力された場合には「数値を入力してください」とalertする処理を追加してください。
-if(answer= '数値以外'){
-  alert('数値を入力してください');
+if(isNaN(result)){
+  console.log('数値ではありません');
 }
 
 
 //課題3:配列に'パンダ', 'ライオン', 'キリン'を定義し、while文ですべて表示する処理を書いてください。
 var animals=['パンダ','ライオン','キリン']
 
-vae i=0;
+var i=0;
 while(true){
   if(i>=animals.length){
     break;
@@ -34,7 +34,7 @@ alert(answer);
 
 var animals=['パンダ','ライオン','キリン']
 
-vae i=0;
+var i=0;
 while(true){
   if(i='ライオン'){
     break;
