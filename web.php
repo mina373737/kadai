@@ -14,16 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//http/controllers/admin
 Route::group(['prefix'=>'admin'],function(){
-  Route::get('news/create','Admin\NewsController@add');
+  Route::get('news/create','Admin\NewsController@add')->middleware('auth');
+  //ProfileController用のRouteを作成
+  Route::get('profile/edit','Admin\ProfileController@edit')->middleware('auth');
 });
 
-//課題3
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
 
-Route::group(['prefix'=>'admin'],function(){
-  Route::get('news/create','AAAController@bbb');
-});
+Route::get('/home', 'HomeController@index')->name('home');
