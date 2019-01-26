@@ -23,27 +23,32 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="title">氏名(name)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="title" value="{{ old('profile') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                        <label class="col-md-2" for="title">性別</label>
-                       <div class="col-md-10">
-                           <input type="radio" name="gender" value="male" checked="checked">男性
-                           <input type="radio" name="gender" value="female">女性
-                       </div>
+                       <select name="gender">
+                         @if(old('gender')=='男性')
+                        <option value="男性" selected="selected">男性</option>
+                        <option value="女性">女性</option>
+                        @else
+                        <option value="男性">男性</option>
+                        <option value="女性" selected="selected">女性</option>
+                        @endif
+                      </select>
                      </div>
 
                     <div class="form-group row">
                         <label class="col-md-2" for="title">趣味(hoby)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="title" value="{{ old('hoby') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="body">自己紹介(introduction)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="body" rows="20">{{ old('introduction') }}</textarea>
                         </div>
                     </div>
 
